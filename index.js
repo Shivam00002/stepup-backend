@@ -8,6 +8,7 @@ dotenv.config({ path: "./.env" })
 app.use(cors())
 app.use(express.json())
 
+
 app.get("/", (req, res) => {
     return res.json({ message: "hello world" })
 })
